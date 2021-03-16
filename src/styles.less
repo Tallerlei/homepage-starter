@@ -1,0 +1,32 @@
+@import './styles/variables.less';
+
+/* You can add global styles to this file, and also import other style files */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-size: 15px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+app-root {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-wrapper {
+  flex: 1;
+  overflow: hidden;
+//   background-color: @color-content-tertiary;
+//   color: contrast(@color-content-tertiary);
+  margin: @standard-padding;
+}
+
+// reusable classes
+.display-flex-center {    
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

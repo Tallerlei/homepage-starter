@@ -1,0 +1,26 @@
+// experimental
+@color-base : rgb(211, 228, 192);
+
+@color-content-primary: @color-base;
+@color-content-secondary: spin(@color-base, -(360 / 3));
+@color-content-tertiary : spin(@color-base, (360 / 3));
+
+@color-mix-1: mix(@color-base, rgb(219, 136, 136));
+@color-mix-2: mix(@color-base, rgb(66, 150, 87));
+@color-mix-3: mix(@color-base, rgb(91, 159, 238));
+
+@color-darken: darken(@color-base, 10%);
+@color-lighten: lighten(@color-base, 10%);
+
+@color-complement: spin(@color-base, 180);
+
+@color-saturate: saturate(@color-base, 10%);
+@color-desaturate: desaturate(@color-base, 10%);
+@color-lightness-desaturate: lightness(desaturate(@color-base, 100%), 30%);
+
+// text color for dark and light backgrounds
+@color-light : rgb(247, 247, 247);
+@color-dark  : rgb(4, 3, 46);
+
+@standard-padding: 12px;
+@standard-margin: 12px;

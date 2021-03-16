@@ -1,0 +1,85 @@
+@import '../../../styles.less';
+
+:host {}
+
+.style-examples-container {
+  margin: @standard-margin;
+  display: flex;
+  flex-wrap: wrap;
+
+}
+
+.style-example {
+  width: 200px;
+  height: 50px;
+  margin-right: @standard-margin;
+  margin-bottom: @standard-margin;
+  .display-flex-center;
+
+  &.base {
+    background-color: @color-base;
+    color: contrast(@color-base, @color-dark, @color-light);
+  }
+
+  &.complement {
+    background-color: @color-complement;
+    color: contrast(@color-complement, @color-dark, @color-light);
+  }
+
+  &.content-primary {
+    background-color: @color-content-primary;
+    color: contrast(@color-content-primary, @color-dark, @color-light);
+  }
+
+  &.content-secondary {
+    background-color: @color-content-secondary;
+    color: contrast(@color-content-secondary, @color-dark, @color-light);
+  }
+
+  &.content-tertiary {
+    background-color: @color-content-tertiary;
+    color: contrast(@color-content-tertiary, @color-dark, @color-light);
+  }
+
+  &.darken {
+    background-color: @color-darken;
+    color: contrast(@color-darken, @color-dark, @color-light);
+  }
+
+  &.desaturate {
+    background-color: @color-desaturate;
+    color: contrast(@color-desaturate, @color-dark, @color-light);
+  }
+
+  &.lighten {
+    background-color: @color-lighten;
+    color: contrast(@color-lighten, @color-dark, @color-light);
+  }
+
+  &.lightness-desaturate {
+    background-color: @color-lightness-desaturate;
+    color: contrast(@color-lightness-desaturate, @color-dark, @color-light);
+  }
+
+  &.saturate {
+    background-color: @color-saturate;
+    color: contrast(@color-saturate, @color-dark, @color-light);
+  }
+
+  &.mix-1 {
+    background-color: @color-mix-1;
+    color: contrast(@color-mix-1, @color-dark, @color-light);
+  }
+
+  &.mix-2 {
+    background-color: @color-mix-2;
+    color: contrast(@color-mix-2, @color-dark, @color-light);
+  }
+
+  &.mix-3 {
+    background-color: @color-mix-3;
+    color: contrast(@color-mix-3, @color-dark, @color-light);
+  }
+
+
+}
