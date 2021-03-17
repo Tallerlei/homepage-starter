@@ -7,6 +7,8 @@ import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './main/home/home.component';
 import { StyleCheckComponent } from './utilities/style-check/style-check.component';
+import { ContactComponent } from './main/contact/contact.component';
+import { AppImprintComponent } from './main/app-imprint/app-imprint.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +16,9 @@ import { StyleCheckComponent } from './utilities/style-check/style-check.compone
     HeaderComponent,
     FooterComponent,
     HomeComponent,
-    StyleCheckComponent
+    StyleCheckComponent,
+    ContactComponent,
+    AppImprintComponent
   ],
   imports: [
     BrowserModule,
