@@ -1,0 +1,19 @@
+@import './variables.less';
+
+input,
+button,
+submit {
+  border: none;
+}
+
+button {
+  padding: @standard-padding-small @standard-padding;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+
+  &[disabled] {
+    cursor: unset;
+  }
+}

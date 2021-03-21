@@ -1,4 +1,6 @@
 @import './styles/variables.less';
+@import './styles/html-elements.less';
+@import './styles/text.less';
 
 /* You can add global styles to this file, and also import other style files */
 html,
@@ -20,15 +22,44 @@ app-root {
 
 .main-wrapper {
   flex: 1;
-  overflow: hidden;
-//   background-color: @color-content-tertiary;
-//   color: contrast(@color-content-tertiary);
+  overflow: auto;
+  //   background-color: @color-content-tertiary;
+  //   color: contrast(@color-content-tertiary);
   margin: @standard-padding;
 }
 
+// element classes
+.standard-button {
+  background-color: @color-content-primary;
+}
+
+.card-container {}
+
+.card {
+  /* Add shadows to create the "card" effect */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  max-width: 250px;
+  padding: @standard-padding @standard-padding-small;
+  border-radius: @standard-padding-small;
+
+  &>*:not(:last-child) {
+    margin-bottom: @standard-margin;
+  }
+}
+
+.card-header {
+  .text-bold;
+}
+/* On mouse-over, add a deeper shadow */
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
 // reusable classes
-.display-flex-center {    
+.display-flex-center {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
